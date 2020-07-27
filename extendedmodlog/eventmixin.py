@@ -1443,7 +1443,7 @@ class EventMixin:
         embed = discord.Embed(
             timestamp=time, colour=await self.get_event_colour(guild, "voice_change"),
         )
-        msg = _("{emoji} `{time}` Updated Voice State for **{member}** (`{m_id}`)").format(
+        msg = _("{emoji} `{time}` Updated Voice State UWU for **{member}** (`{m_id}`)").format(
             emoji=self.settings[guild.id]["voice_change"]["emoji"],
             time=time.strftime("%H:%M:%S"),
             member=member,
