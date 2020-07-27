@@ -1450,7 +1450,7 @@ class EventMixin:
             m_id=member.id,
         )
         embed.set_author(
-            name=_("{member} ({m_id}) Voice State Update").format(member=member, m_id=member.id)
+            name=_("{member} ({m_id}) Voice State Update").format(member=str(member), m_id=member.id)
         )
         change_type = None
         worth_updating = False
