@@ -1480,16 +1480,16 @@ class EventMixin:
             worth_updating = True
             change_type = "channel"
             if before.channel is None:
-                chan_msg = member.mention + _(" has joined ") + inline(after.channel.name)
+                chan_msg = str(member) + _(" has joined ") + inline(after.channel.name)
                 msg += chan_msg + "\n"
                 embed.description = chan_msg
             elif after.channel is None:
-                chan_msg = member.mention + _(" has left ") + inline(before.channel.name)
+                chan_msg = str(member) + _(" has left ") + inline(before.channel.name)
                 msg += chan_msg + "\n"
                 embed.description = chan_msg
             else:
                 chan_msg = (
-                    member.mention
+                    str(member)
                     + _(" has moved from ")
                     + inline(before.channel.name)
                     + _(" to ")
